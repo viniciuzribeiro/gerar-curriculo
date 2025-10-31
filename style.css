@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background: #2442BC;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    background: white;
+    width: 70%;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.botao, button {
+    background: #2442BC;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.botao:hover, button:hover {
+    background: #1d3695;
+}
+
+/* ============================= */
+/*        IMPRESSÃO LIMPA        */
+/* ============================= */
+@media print {
+    /* Esconde elementos indesejados ao imprimir */
+    .no-print,
+    button,
+    a.voltar,
+    header,
+    footer {
+        display: none !important;
+        visibility: hidden;
+    }
+
+    /* Remove margens automáticas do navegador */
+    body {
+        background: white;
+        margin: 0;
+        padding: 0;
+    }
+
+    main {
+        width: 100%;
+        box-shadow: none;
+        border: none;
+    }
+}
